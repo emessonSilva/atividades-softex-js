@@ -5,7 +5,7 @@
 
 function dadosUsuario() {
     const nomeCompleto = prompt("Digite seu nome completo:");
-    const anoNascimento = parseInt(prompt("Digite seu ano de nascimento:"));
+    const anoNascimento = parseInt(prompt("Digite seu ano de nascimento(entre 1922 - 2021):"));
   
     
     if (nomeCompleto === null || nomeCompleto === "" || isNaN(anoNascimento)) {
