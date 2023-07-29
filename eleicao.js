@@ -93,7 +93,7 @@ if (candidato_Z > baseVotos) {
 }
 
 if (vencedor) {
-  console.log(`O vencedor é: ${vencedor}`);
+  console.log(`O vencedor é: ${vencedor}!`);
 } else {
     console.log("Eleição sem vencedor!");
 }
