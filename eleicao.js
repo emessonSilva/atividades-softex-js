@@ -31,7 +31,7 @@ function votar(voto) {
   
   function candidatos() {
     const votoUsuario = parseInt(prompt(
-      "Digite o número do candidato que deseja votar (889: candidato X, 847: candidato Y, 515: candidato Z, 0: voto branco) ou 'FIM' para encerrar a votação: "
+      "Digite o número do candidato que deseja votar (889: candidato X, 847: candidato Y, 515: candidato Z, 0: voto branco): "
     ));
   
     if (isNaN(votoUsuario) || votoUsuario === "") {
@@ -43,7 +43,7 @@ function votar(voto) {
     if (votoUsuario === 889 || votoUsuario === 847 || votoUsuario === 515 || votoUsuario === 0) {
         votar(votoUsuario);
       } else {
-        console.log("Voto inválido, digite novamente!");
+        nulo++;
         candidatos();
       }
   }
