@@ -138,7 +138,7 @@ function civilState() {
 const rectangleBase = Number(prompt("Digite o valor da base do retângulo (em metros):"));
 const rectangleHeight = Number(prompt("Digite o valor da altura do retângulo (em metros):"));
 const rectangleResult = rectangleBase * rectangleHeight;
-console.log(`A área do retângule é de ${rectangleResult} metros!`);
+console.log(`A área do retângulo é de ${rectangleResult} metros!`);
 
 //Peça ao usuário que digite a sua cidade e verifique se ela começa com a letra "S" 
 //(ou outra letra de sua escolha).
@@ -148,3 +148,140 @@ if (city.charAt[0] == 'S' || city.charAt[0] == 's' ) {
 } else {
     console.log(`A cidade de ${city} não inicia com S!`);
 }
+
+//Solicite ao usuário que insira dois números decimais e calcule o resto da divisão entre eles.
+const floatNumber1 = parseFloat(prompt("Digite o primeiro número decimal (com o ponto):"));
+const floatNumber2 = parseFloat(prompt("Digite o segundo número decimal (com o ponto):"));
+const floatResult = floatNumber1 % floatNumber2;
+console.log(`O resto da divisão entre ${floatNumber1} e ${floatNumber2} é ${floatResult}.`);
+
+//Solicite ao usuário um número decimal e converta-o em um número inteiro.
+const floatNumber3 = parseFloat(prompt("Digite um número decimal (com o ponto):"));
+let intNumber = Math.round(floatNumber3); // Arredonda o número de acordo com a regra da matemática
+console.log(`O número decimal ${floatNumber3} foi arredondado para o inteiro ${intNumber}.`);
+
+//Receba uma string contendo um número inteiro e some 10 a esse número, convertendo-o
+//novamente para uma string antes de exibi-lo.
+const stringNumber = prompt("Digite um número:");
+const convertNumber = parseInt(stringNumber);
+const add10 = convertNumber + 10;
+const convertNumber2 = add10.toString();
+console.log(`O valor é ${convertNumber2} do tipo ${typeof convertNumber2}!`);
+
+//Solicite ao usuário que digite uma data no formato "dd/mm/aaaa" e extraia o dia, o mês e o ano
+//separadamente, convertendo-os em números inteiros.
+const date = prompt("Informe uma data no formato dd/mm/aaaa:");
+const [dayDate, monthDate, yearDate] = date.split('/').map(Number);
+console.log(`O dia ${dayDate} é do tipo ${typeof dayDate}!`);
+console.log(`O mês ${monthDate} é do tipo ${typeof monthDate}!`);
+console.log(`O ano ${yearDate} é do tipo ${typeof yearDate}!`);
+
+//Receba o nome de uma cidade do usuário e concatene-o com o nome do estado para formar uma
+//mensagem completa, como "Você mora em [cidade], [estado].".
+const userCity = prompt("Digite o nome da cidade que mora:");
+const userState = prompt("Digite o nome do estado que mora:");
+console.log(`Você mora em ${userCity}, ${userState}.`);
+
+//Solicite ao usuário que insira seu ano de nascimento e concatene-o com uma mensagem de
+//boas-vindas, como "Bem-vindo ao nosso programa, nascido em [ano de nascimento]!".
+const userBirthYear = parseInt(prompt("Insira seu ano de nascimento:"));
+console.log(`Bem-vindo(a) ao nosso programa, nascido em ${userBirthYear}!`);
+
+//Receba um número inteiro e uma string do usuário. Em seguida, concatene-os em uma única
+//string, separando-os com um espaço.
+const userNumber = Number(prompt("Digite um número:"));
+const userString = prompt("Digite uma palavra:");
+console.log(`Você digitou: ${userNumber} ${userString}.`);
+
+//Receba o nome de um produto digitado pelo usuário e concatene-o com o preço do produto,
+//adicionando o símbolo de moeda da sua escolha.
+const userProduct = prompt("Digite o nome de um produto:");
+const userPrice = prompt("Digite o valor do produto:");
+console.log(`O/A ${userProduct} custa R$ ${userPrice}.`);
+
+//Receba um número inteiro do usuário e concatene-o com uma mensagem, informando o dobro desse número.
+const userNumber2 = Number(prompt("Digite um número:"));
+const doubleNumber = userNumber2 * 2;
+console.log(`Você digitou o número ${userNumber2} e o dobro dele é ${doubleNumber}`);
+
+//Receba uma string contendo um endereço de e-mail e concatene-a com uma mensagem de agradecimento personalizada.
+const userEmail = prompt("Digite seu email:");
+const message = "Obrigado(a) por realizar o cadastro na nossa plataforma!";
+console.log(`${message} Seu email de acesso é: ${userEmail}`);
+
+//Receba dois números inteiros do usuário e exiba a soma, a diferença, o produto e o quociente
+//(divisão inteira) entre eles.
+const userNumber3 = parseInt(prompt("Digite o primeiro número inteiro:"));
+const userNumber4 = parseInt(prompt("Digite o segundo número inteiro:"));
+const sum = userNumber3 + userNumber4;
+const subt = userNumber3 - userNumber4;
+const mult = userNumber3 * userNumber4;
+const div2 =  userNumber3/userNumber4;
+console.log(`Soma: ${sum}`);
+console.log(`Subtração: ${subt}`);
+console.log(`Multiplicaçõ: ${mult}`);
+console.log(`Divisão: ${div2}`);
+
+//Peça ao usuário para digitar a base e a altura de um triângulo. 
+//Em seguida, calcule e exiba a área do triângulo.
+const triangleBase = Number(prompt("Digite a medida da base do triângulo:"));
+const triangleHeight = Number(prompt("Digite a medida da altura do triângulo:"));
+const triangleArea = (triangleBase * triangleHeight) / 2;
+console.log(`A área do triangulo é ${triangleArea}.`);
+
+//Receba o raio de uma circunferência digitado pelo usuário e calcule o seu perímetro (2 * π * raio).
+const circleRadius = Number(prompt("Digite o valor do raio da circunferência:"));
+const π = 3.14;
+const circlePerimeter = 2 * π * circleRadius;
+
+////Receba a base e a altura de um retângulo digitados pelo usuário. Em seguida, calcule e exiba o
+//perímetro do retângulo.
+const rectangleBase2 = Number(prompt("Digite o valor da base do retangulo:"));
+const rectangleHeight2 = Number(prompt("Digite o valor da altura do retangulo:"));
+const rectanglePerimeter = rectangleBase2 * 2 + rectangleHeight2 * 2;
+console.log(`O perímetro da retangulo é ${rectanglePerimeter}.`);
+
+//Solicite ao usuário que insira três números decimais. Em seguida, calcule e exiba a média
+//aritmética desses números.
+let sum2 = 0;
+for (let i = 1; i <= 3; i++) {
+  let floatNumbers = parseFloat(prompt(`Digite um número decimal:`));
+  sum2 += floatNumbers;
+}
+const arithmeticAverage = sum2/3;
+console.log(`A média dos números aritmética dos números é ${arithmeticAverage}.`)
+
+//Peça ao usuário para digitar a sua idade e, em seguida, informe quantos meses e quantos dias ele já
+//viveu (considerando um ano com 365 dias).
+const userAge = parseInt(prompt("Digite sua idade:"));
+let currentMonth = new Date().getMonth();
+const monthsAlive = userAge * 12 + currentMonth;
+const daysAlive = userAge * 365 + Math.floor(currentMonth * 30.4375);
+console.log(`Você já viveu ${monthsAlive} meses e ${daysAlive} dias.`);
+
+//Receba um valor em reais e a cotação do dólar digitados pelo usuário. Em seguida, converta o valor
+//para dólares e exiba o resultado.
+const realValue = Number(prompt("Digite um valor em reais:"));
+const dollarQuotation = Number(prompt("Digite a cotação atual do dolar estadunidense:"));
+const realIntoDollar = realValue / dollarQuotation;
+console.log(`R$ ${realValue} equivale a US$ ${realIntoDollar}`);
+
+//Solicite ao usuário para digitar um número decimal e arredonde-o para o inteiro mais próximo.
+const floatNumber4 = parseFloat(prompt("Digite um número decimal (com o ponto):"));
+let intNumber2 = Math.round(floatNumber4); // Arredonda o número de acordo com a regra da matemática
+console.log(`O número decimal ${floatNumber4} foi arredondado para o inteiro ${intNumber2}.`);
+
+//Receba três números inteiros digitados pelo usuário e exiba o resultado da operação (n1 + n2) * n3.
+const intNumber3 = parseInt(prompt("Digite um número inteiro:"));
+const intNumber4 = parseInt(prompt("Digite um número inteiro:"));
+const intNumber5 = parseInt(prompt("Digite um número inteiro:"));
+const numberOperation = (intNumber3 + intNumber4) * intNumber5;
+console.log(`O resultado da operação (n1 + n2) * n3 é igual a ${numberOperation}.`);
+
+//Peça ao usuário que digite uma temperatura em graus Celsius e a converta para Fahrenheit usando
+//a fórmula: Fahrenheit = (Celsius * 9/5) + 32.
+const celciusTemperature = Number(prompt("Digite o valor da temperatura em graus celcius (com ponto, caso seja decimal):"));
+const fahrenheitTemperature = (celciusTemperature * 9/5) + 32;
+console.log (`A temperatura ${celciusTemperature}°C é equivale a ${fahrenheitTemperature}°F.`);
+
+
