@@ -75,7 +75,7 @@ console.log("Seu nome invertido: "+name2+" "+name1);
 
 //Receba uma string digitada pelo usuário e imprima o seu tamanho (número de caracteres). 
 const text = prompt("Digite algo:");
-console.log("Tamanho do texto(contando espaços): "+text.length+" "+"caracteres");
+console.log("Tamanho do texto(incluindo espaços): "+text.length+" "+"caracteres");
 
 //Solicite ao usuário um número inteiro e exiba se ele é par ou ímpar. 
 const num3 = prompt("Digite um número:");
@@ -249,7 +249,7 @@ for (let i = 1; i <= 3; i++) {
   sum2 += floatNumbers;
 }
 const arithmeticAverage = sum2/3;
-console.log(`A média dos números aritmética dos números é ${arithmeticAverage}.`)
+console.log(`A média aritmética dos números é ${arithmeticAverage}.`)
 
 //Peça ao usuário para digitar a sua idade e, em seguida, informe quantos meses e quantos dias ele já
 //viveu (considerando um ano com 365 dias).
