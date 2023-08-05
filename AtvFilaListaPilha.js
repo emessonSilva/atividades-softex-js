@@ -34,6 +34,7 @@ console.log(arrayPilha);
 //Remoção em lista.
 //Para esvaziar uma lista, podemos utilizar o comando splice() e você pode escolhe qual elemento quer remover e a quantidade.
 //Na lista não existe uma sequência de remoção, você que decide o que quer remover e a quantidade, até esvaziar o array.
+//Neste exemplo podemos utilizar o splice com o índice de posição no zero e a quantidade de elementos a serem removidos sendo cinco, esvaziando assim, toda a lista. 
 
 const arrayLista = [3, 7, 9, 1, 0];
 
