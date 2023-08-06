@@ -27,6 +27,51 @@ function createPersonNode(name, age) {
       current = current.child;
     }
   }
+
+function removeFirst(list) {
+  if (!list) {
+    console.log("Lista vazia!");
+    return null;
+  }
+
+  const newHead = list.child;
+  list.child = null; 
+  console.log(`Primeira pessoa removida: ${list.name}`);
+  return newHead;
+}
+
+function removeLast(list) {
+  if (!list) {
+    console.log("Lista vazia!");
+    return null;
+  }
+
+  if (!list.child) {
+    console.log(`Última pessoa removida: ${list.name}`);
+    return null;
+  }
+
+  let current = list;
+  while (current.child.child) {
+    current = current.child;
+  }
+  console.log(`Última pessoa removida: ${current.child.name}`);
+  current.child = null;
+  return list;
+}
+
+function search(list, name) {
+    let current = list;
+    while (current) {
+      if (current.name === name) {
+        console.log(`Found: Name: ${current.name}, Age: ${current.age}`);
+        return current;
+      }
+      current = current.child;
+    }
+    console.log(`Person '${name}' not found.`);
+    return null;
+  }
   
   let peopleList = null;
   peopleList = addPerson(peopleList, "Alice", 25);
@@ -34,5 +79,9 @@ function createPersonNode(name, age) {
   peopleList = addPerson(peopleList, "Maria", 22);
   
   console.log("People List:");
+  printPeople(peopleList);
+  search(peopleList, "Alice");
+  peopleList = removeFirst(peopleList);
+  peopleList = removeLast(peopleList);
   printPeople(peopleList);
   
