@@ -22,6 +22,7 @@ for (let i = 0; i < 10; i++) {
 for (let i = 0; i < 10; i++) {
   console.log(i);
 }
+
 //Implemente o código do slide de número 36.
 
 for (let i = 0; i < 10; i++) {
