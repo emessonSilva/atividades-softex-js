@@ -88,7 +88,8 @@ while (multiplier <= 10) {
   multiplier++;
 }
 
-//Crie um programa que leia uma sequência de números inteiros do usuário e exiba o maior e o menor valor digitado. O programa deve parar de ler quando o usuário digitar o número 0 utilizando o while.
+//Crie um programa que leia uma sequência de números inteiros do usuário e exiba o maior e o menor valor digitado. 
+//O programa deve parar de ler quando o usuário digitar o número 0 utilizando o while.
 let arr = [];
 let number = -1;
 let minValue = Number.MAX_SAFE_INTEGER;
@@ -113,7 +114,8 @@ while (number !== 0) {
 console.log(`O maior número digitado foi ${maxValue}.`);
 console.log(`O menor número digitado foi ${minValue}.`);
 
-//Crie um programa que leia uma sequência de números inteiros do usuário e exiba a média dos números digitados. O programa deve parar de ler quando o usuário digitar o número -1 utilizando o while.
+//Crie um programa que leia uma sequência de números inteiros do usuário e exiba a média dos números digitados.
+//O programa deve parar de ler quando o usuário digitar o número -1 utilizando o while.
 
 let arr2 = [];
 let number2 = 0;
@@ -201,8 +203,8 @@ while (d <= 5) {
 console.log(`Notas: ${grades}`)
 console.log(`Quantidade de alunos aprovados: ${numApproved}.`);
 
-//Elabore um programa que leia uma sequência de números inteiros do usuário e determine quantos números pares foram digitados antes do primeiro número ímpar. O programa deve parar
-//de ler quando o usuário digitar o número 0 utilizando o while.
+//Elabore um programa que leia uma sequência de números inteiros do usuário e determine quantos números pares foram digitados 
+//antes do primeiro número ímpar. O programa deve parar de ler quando o usuário digitar o número 0 utilizando o while.
 
 let number6 = -1;
 let evenCounter = 0;
@@ -223,8 +225,8 @@ while (number6 !== 0) {
 
 console.log(`Foram digitados ${evenCounter} números pares antes do primeiro número ímpar!`);
 
-//Crie um programa que leia uma sequência de números inteiros do usuário e exiba quantos números pares e quantos números ímpares foram digitados. O programa deve parar de ler quando
-//o usuário digitar o número 0 utilizando o while.
+//Crie um programa que leia uma sequência de números inteiros do usuário e exiba quantos números pares e quantos números ímpares
+//foram digitados. O programa deve parar de ler quando o usuário digitar o número 0 utilizando o while.
 
 let number7 = -1;
 let evenCounter2 = 0;
@@ -245,8 +247,8 @@ while (number7 !== 0) {
 
 console.log(`Foram digitados ${evenCounter2} números pares e ${oddCounter2} números ímpares!`);
 
-//Faça um programa que leia uma sequência de números inteiros do usuário e exiba quantos números são divisíveis por 2, quantos são divisíveis por 3 e quantos são divisíveis por 5. O
-//programa deve parar de ler quando o usuário digitar o número 0 utilizando o while.
+//Faça um programa que leia uma sequência de números inteiros do usuário e exiba quantos números são divisíveis por 2, 
+//quantos são divisíveis por 3 e quantos são divisíveis por 5. O programa deve parar de ler quando o usuário digitar o número 0 utilizando o while.
  
 let number8 = 0;
 let evenCounter3 = 0;
@@ -267,8 +269,8 @@ do {
 
 alert(`Foram digitados ${evenCounter3} números pares e ${oddCounter3} números ímpares.`);
 
-//Desenvolva um programa que leia uma sequência de números inteiros do usuário e exiba a média dos números divisíveis por 3. O programa deve parar de ler quando o usuário digitar o número 0
-//utilizando o while.
+//Desenvolva um programa que leia uma sequência de números inteiros do usuário e exiba a média dos números divisíveis por 3. 
+//O programa deve parar de ler quando o usuário digitar o número 0 utilizando o while.
 
 let number9 = -1;
 let sumNumbersDividedByThree = 0;
@@ -293,8 +295,8 @@ if (arr3.length > 0) {
     alert("Nenhum número divisível por 3 foi digitado.");
 }
 
-//Faça um programa que leia uma sequência de números inteiros do usuário e exiba quantos números possuem mais de três dígitos. O programa deve parar de ler quando o usuário digitar o
-//número 0 utilizando o while.
+//Faça um programa que leia uma sequência de números inteiros do usuário e exiba quantos números possuem mais de três dígitos. 
+//O programa deve parar de ler quando o usuário digitar o número 0 utilizando o while.
 
 let number10 = -1; 
 let sumNumberMoreThreeDigits = 0;
@@ -367,8 +369,8 @@ if (arr5.length > 0) {
 }
 
 
-//Faça um programa que leia uma sequência de números inteiros do usuário e exiba quantos números são pares e quantos números são ímpares entre o primeiro e o último número digitado.
-//O programa deve parar de ler quando o usuário digitar o número 0 utilizando o while.
+//Faça um programa que leia uma sequência de números inteiros do usuário e exiba quantos números são pares e quantos números são ímpares
+//entre o primeiro e o último número digitado. O programa deve parar de ler quando o usuário digitar o número 0 utilizando o while.
 
 let number13 = -1;
 let evenCounter4 = 0;
@@ -382,8 +384,8 @@ while (number13 !== 0) {
             evenCounter4++;
         } else {
             oddCounter4++;
-        }
-    }
+         }
+     }
 }
 
 if (evenCounter4 > 0 || oddCounter4 > 0) {
