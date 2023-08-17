@@ -346,27 +346,21 @@ if (arr4.length > 0) {
 
 let MinOddValue = Number.MAX_SAFE_INTEGER;
 let number12 = -1;
-let arr5 = [];
 
 while (number12 !== 0) {
-    number12 = parseInt(prompt("Digite outro número inteiro (ou pressione 0 para encerrar):"));
+  number12 = parseInt(prompt("Digite um número inteiro (ou pressione 0 para encerrar):"));
 
-    if (number12 !== 0) {
-        if (number12 < MinOddValue && number12 % 2 !== 0) {
-            arr5.push(number12);
-        }
-    }
-
-    if (number12 < MinOddValue && number12 % 2 !== 0) {
-        MinOddValue = number12;
-    }
+  if (number12 > 0 && number12 % 2 !== 0 && number12 < MinOddValue) {
+    MinOddValue = number12;
+  }
 }
 
-if (arr5.length > 0) {
-    alert(`O menor valor digitado positivo e ímpar foi: ${MinOddValue}.`);
+if (MinOddValue !== Number.MAX_SAFE_INTEGER) {
+  alert(`O menor valor digitado positivo e ímpar foi: ${MinOddValue}.`);
 } else {
-    alert("Nenhum valor digitado foi positivo e ímpar ao mesmo tempo!");
+  alert("Nenhum valor digitado foi positivo e ímpar ao mesmo tempo!");
 }
+
 
 
 //Faça um programa que leia uma sequência de números inteiros do usuário e exiba quantos números são pares e quantos números são ímpares
