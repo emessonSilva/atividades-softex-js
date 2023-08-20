@@ -23,6 +23,7 @@ function criarFrases() {
 criarFrases();
 criarFrases();
 criarFrases();
+
 //3. Implemente o código do slide de número 24.
 
 function soma(num1, num2) {
@@ -162,9 +163,6 @@ const calcularMediaArredondada = (numberList) => {
 
 const numberList = prompt("Digite uma sequência de números:");
 calcularMediaArredondada(numberList);
-
-//12. Desenvolva uma função chamada "contarDigitosParesImpares" que receba um número inteiro
-//como parâmetro e retorne a quantidade de dígitos pares e a quantidade de dígitos ímpares presentes nesse número.
 
 //12. Desenvolva uma função chamada "contarDigitosParesImpares" que receba um número inteiro
 //como parâmetro e retorne a quantidade de dígitos pares e a quantidade de dígitos ímpares presentes nesse número.
