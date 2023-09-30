@@ -1,30 +1,45 @@
-//Faça uma função calculadora de dois números com três parâmetros: 
-//os dois primeiros serão os números da operação e o terceiro será a entrada que definirá a operação a ser executada. 
-//Considere a seguinte definição:
-//1. Soma
-//2. Subtração
-//3. Multiplicação
-//4. Divisão
-//Caso seja inserido um número de operação que não exista, o resultado deverá ser 0.
+//Calculadora simples em JS
 
-function calculadora (num1, num2, opcao) {
-    switch (opcao) {
-        case 1: 
-           return num1 + num2;
-        case 2:
-            return num1 - num2;
-        case 3:
-            return num1 * num2;
-        case 4:
-            return num2 !== 0 ? num1 / num2 : 0;
-        default:
-            return 0;
-    }
+const valor1 = Number(prompt("Digite um número:"));
+const valor2 = Number(prompt("Digite um número:"));
+let operador = prompt("Escolha qual operação deseja realizar: + (soma), - (subtração), / (divisão) ou x (multiplicação)");
+
+let resultado;
+
+switch (operador) {
+    case '+':
+        resultado = valor1 + valor2;
+        break;
+    
+    case '-': 
+        resultado = valor1 - valor2;
+        break;
+    
+    case '/': 
+       if (valor2 !== 0) {
+        resultado = valor1 / valor2;
+        resto = valor1 % valor2
+        } else {
+        alert("Erro: Divisão por zero.");
+        }
+        break;
+
+    case 'x':
+        resultado = valor1 * valor2;
+        break;
+
+    default:
+        console.log("Operador inválido.");
+        break;
 }
 
-console.log(calculadora(4,2,1));
-console.log(calculadora(4,2,2));
-console.log(calculadora(4,2,3));
-console.log(calculadora(4,2,4));
-console.log(calculadora(4,2,5));
-
+if (resultado !== undefined) {
+    if (operador === '/') {
+        alert("O resultado da divisão é: " + resultado);
+        if (resto !== undefined) {
+            alert("A sobra da divisão é: " + resto);
+        }
+    } else {
+        alert("O resultado da operação " + operador + " é: " + resultado);
+    }
+}
