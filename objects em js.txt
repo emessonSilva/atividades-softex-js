@@ -1,0 +1,86 @@
+// Carro
+const carro = {
+  marca: "Toyota",
+  modelo: "Corolla",
+  anoFabricacao: 2022,
+  acelerar: function(velocidade) {
+    console.log(`Acelerando o ${this.marca} ${this.modelo} a ${velocidade} km/h.`);
+  },
+  frear: function() {
+    console.log(`Freando o ${this.marca} ${this.modelo}.`);
+  },
+  ligar: function() {
+    console.log(`Ligando o ${this.marca} ${this.modelo}.`);
+  }
+};
+
+carro.acelerar(60);
+carro.frear();
+carro.ligar();
+
+// Mesa
+const mesa = {
+  material: "Madeira",
+  cor: "Marrom",
+  numPernas: 4,
+  adicionarItem: function(item) {
+    console.log(`Adicionando ${item} à mesa.`);
+  },
+  removerItem: function(item) {
+    console.log(`Removendo ${item} da mesa.`);
+  },
+  limparSuperficie: function() {
+    console.log("Limpando a superfície da mesa.");
+  }
+};
+
+mesa.adicionarItem("Livro");
+mesa.removerItem("Caneca");
+mesa.limparSuperficie();
+
+// Pessoa
+const pessoa = {
+  nome: "Maria",
+  idade: 30,
+  genero: "Feminino",
+  cumprimentar: function() {
+    console.log(`Olá, meu nome é ${this.nome}.`);
+  },
+  envelhecer: function() {
+    this.idade++;
+    console.log(`Aniversário! Agora tenho ${this.idade} anos.`);
+  },
+  apresentar: function() {
+    console.log(`Eu sou ${this.nome}, tenho ${this.idade} anos e sou do gênero ${this.genero}.`);
+  }
+};
+
+pessoa.cumprimentar();
+pessoa.envelhecer();
+pessoa.apresentar();
+
+// Conta Bancária
+const contaBancaria = {
+  saldo: 1000,
+  numeroConta: "12345",
+  titular: "João",
+  depositar: function(valor) {
+    this.saldo += valor;
+    console.log(`Depósito de ${valor} realizado. Novo saldo: ${this.saldo}.`);
+  },
+  sacar: function(valor) {
+    if (valor <= this.saldo) {
+      this.saldo -= valor;
+      console.log(`Saque de ${valor} realizado. Novo saldo: ${this.saldo}.`);
+    } else {
+      console.log("Saldo insuficiente.");
+    }
+  },
+  verificarSaldo: function() {
+    console.log(`Saldo atual: ${this.saldo}`);
+  }
+};
+
+contaBancaria.depositar(500);
+contaBancaria.sacar(300);
+contaBancaria.verificarSaldo();
